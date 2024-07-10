@@ -1,0 +1,19 @@
+@startuml
+class Person {
+    # String name
+    # Integer age
+    + void move()
+    + void say()
+}
+class Student {
+    - String studentNo
+    + void study()
+}
+class Teacher {
+    - String teacherNo
+    + void teach()
+    + void speack()
+}
+Person <|-- Student
+Person <|-- Teacher
+@enduml
