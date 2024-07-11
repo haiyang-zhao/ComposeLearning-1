@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
@@ -25,6 +26,10 @@ fun Modifier_scope() {
             modifier = Modifier
                 .size(300.dp)
                 .background(Color.Red)
+                .padding(10.dp)
+                .pointerInput(Unit) {
+
+                }
         ) {
             Box(
                 modifier = Modifier

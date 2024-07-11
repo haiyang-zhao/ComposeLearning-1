@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+set separator none
+
+'Modifier
+interface Modifier
+interface Modifier.Element extends Modifier
+class CombinedModifier implements Modifier
+class ModifierCompanionObject implements Modifier
+
+
+'Modifier.size
+
+abstract class ModifierNodeElement implements Modifier.Element
+class SizeElement extends ModifierNodeElement
+class BackgroundElement extends ModifierNodeElement
+class PaddingElement extends ModifierNodeElement
+class SuspendPointerInputElement extends ModifierNodeElement
+
+@enduml
+
+
+
