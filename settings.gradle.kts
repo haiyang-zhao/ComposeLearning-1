@@ -23,4 +23,6 @@ rootProject.name = "ComposeLearning"
 include(":app")
 include(":Chapter_02_BasicUI")
 include(":Chapter_02_BasicUI:app")
+include(":Chapter_04_State")
 include(":KotlinLearming")
+include(":Chapter_04_State:app")

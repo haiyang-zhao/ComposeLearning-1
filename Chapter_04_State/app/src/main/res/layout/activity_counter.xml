@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:text="Click the buttons to adjust your value"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="0"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/decrementionBtn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/incrementBtn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
