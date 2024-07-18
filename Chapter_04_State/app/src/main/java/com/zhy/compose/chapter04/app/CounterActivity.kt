@@ -8,16 +8,23 @@ import com.zhy.compose.chapter04.app.databinding.ActivityCounterBinding
 class CounterActivity : ComponentActivity() {
 
     private lateinit var binding: ActivityCounterBinding
+    private var counter: Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_counter)
 
-        binding.incrementBtn.setOnClickListener{
-            binding.counter.text = "${Integer.valueOf(binding.counter.text.toString())+1}"
+        binding.incrementBtn.setOnClickListener {
+            counter++
+            updateCounter()
         }
 
-        binding.decrementionBtn.setOnClickListener{
-            binding.counter.text = "${Integer.valueOf(binding.counter.text.toString())-1}"
+        binding.decrementionBtn.setOnClickListener {
+            counter--
+            updateCounter()
         }
+    }
+
+    private fun updateCounter() {
+        binding.counter.text = " $counter "
     }
 }
