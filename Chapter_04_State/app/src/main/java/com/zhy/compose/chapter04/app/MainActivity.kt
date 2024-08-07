@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeLearningTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    CounterComponent()
+                    CounterScreen()
                 }
             }
         }
@@ -39,7 +39,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     ComposeLearningTheme {
-        CounterComponent()
+        CounterScreen()
     }
 }
 
