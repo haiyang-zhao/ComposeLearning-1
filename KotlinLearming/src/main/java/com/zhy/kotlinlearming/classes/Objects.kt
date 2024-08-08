@@ -1,5 +1,7 @@
 package com.zhy.kotlinlearming.classes
 
+import com.zhy.kotlinlearming.User
+
 
 // companion object
 // https://kotlinlang.org/docs/object-declarations.html#companion-objects
@@ -58,4 +60,9 @@ fun main() {
         a + b
     }
     println(foldResult)
+}
+
+
+fun getFullName(user: User?): String {
+    return user?.let { "${it.firstName} ${it.lastName}" } ?: "Unknown"
 }
